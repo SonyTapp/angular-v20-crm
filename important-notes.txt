@@ -1,0 +1,44 @@
+----  BASIC COMMANDS. -----
+
+
+         ------- Project & Setup ------ 
+
+            ng new <project-name> – create a new Angular project
+
+            ng serve -o – run locally and open in browser
+
+            ng build – build the project (use --configuration production for prod)
+
+        ----- Generating Features -------
+
+            ng generate component <name> or ng g c <name> – create a component
+
+            ng generate service <name> – create a service
+
+            ng generate module <name> – create a module
+
+
+
+-------  RUN THESE TWO COMMANDS TO UPDATE THE GIT PAGES -------
+
+
+
+   ---- Compiles your Angular app for production ----
+
+        ng build --configuration production --base-href /angular-crm/
+
+
+
+  ---- Takes the built files and pushes them to the gh-pages branch of your repo. ----
+
+        npx angular-cli-ghpages --dir=dist/angular-crm/browser
+
+
+
+            git add .                  # stage all changes
+            git commit -m "Your message"  # commit with a message
+            git push                   # push to the remote repository
+
+-------------------------------------------------------------------------
+
+

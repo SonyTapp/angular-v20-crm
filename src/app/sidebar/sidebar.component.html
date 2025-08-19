@@ -1,0 +1,14 @@
+<nav class="sidebar">
+  <div class="sidebar-head">My CRM</div>
+  <hr>
+    <ul>
+      @for (item of menuItems; track item) {
+        <li>
+          <a [routerLink]="item.route">{{ item.name }}</a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+
+

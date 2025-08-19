@@ -1,0 +1,22 @@
+<ul *ngIf="interactions$ | async as interactions" class="interactions">
+  <li *ngFor="let interaction of interactions">
+    
+    <div class="interaction-header">
+      <span class="customer-name">{{ interaction.customerName }}</span>
+      <span class="interaction-date">{{ interaction.date }}</span>
+    </div>
+
+    <textarea class="interaction-detail" [(ngModel)]="interaction.detail"></textarea>
+
+    <div class="interaction-actions">
+      <button class="delete" (click)="deleteInteraction(interaction)">
+        <i class="fas fa-trash"></i>
+      </button>
+      <button class="save" (click)="saveInteraction(interaction)">
+        <i class="fas fa-check"></i>
+      </button>
+    </div>
+  </li>
+</ul>
+
+<p *ngIf="(interactions$ | async)?.length === 0">No interactions found.</p>

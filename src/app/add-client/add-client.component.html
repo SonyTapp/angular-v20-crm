@@ -1,0 +1,10 @@
+<div>
+  <label for="new-customer">Client Name: </label>
+  <input id="new-customer" #customerName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" 
+        (click)="addCustomer(customerName.value); customerName.value=''">
+  Add Client
+</button>
+</div>

@@ -1,0 +1,18 @@
+<h2>Activity</h2>
+@if (messageService.messages.length) {
+  <button (click)="messageService.clear()">Clear Activity</button>
+}
+<hr>
+
+  @if (messageService.messages.length > 0) {
+    <div>
+      @for (message of messageService.messages; track message) {
+        <div>
+          {{ message }}
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="no-act-placeholder">No Activities Yet.</div>
+  }
+

@@ -1,0 +1,43 @@
+@if (customer) {
+  <div>
+    <h2>{{customer.name}} Details:</h2>
+    <div>
+      <label for="customer-name">Name: </label>
+      <input id="customer-name" [(ngModel)]="customer.name" placeholder="Customer name"/>
+    </div>
+    <div>
+      <label for="company-name">Company: </label>
+      <input id="company-name" [(ngModel)]="customer.companyName" placeholder="Company name"/>
+    </div>
+    <div>
+      <label for="jobtitle">Job Title: </label>
+      <input id="jobtitle" [(ngModel)]="customer.jobtitle" placeholder="Job title"/>
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input id="email" [(ngModel)]="customer.email" placeholder="Email"/>
+    </div>
+    <div>
+      <label for="phoneNumber">Phone Number: </label>
+      <input id="phoneNumber" [(ngModel)]="customer.phoneNumber" placeholder="Phone number"/>
+    </div>
+    <div>
+      <label for="address">Address: </label>
+      <input id="address" [(ngModel)]="customer.address" placeholder="Address"/>
+    </div>
+    <div>
+      <label for="notes">Notes: </label>
+      <textarea id="notes" [(ngModel)]="customer.notes" placeholder="Notes"></textarea>
+    </div>
+    <div>
+      <label for="status">Status: </label>
+      <input id="status" [(ngModel)]="customer.status" placeholder="Status"/>
+    </div>
+    <div>
+      <label for="createdDate">Created Date: </label>
+      <input id="createdDate" [(ngModel)]="customer.createdDate" placeholder="Created date"/>
+    </div>
+    <button type="button" (click)="goBack()">Go Back</button>
+    <button type="button" (click)="save()">Save</button>
+  </div>
+}

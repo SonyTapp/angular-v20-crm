@@ -1,0 +1,56 @@
+@if (customer) {
+  <div class="customer-display">
+    <div class="field">
+      <span class="label">ID:</span>
+      <span class="value">{{ customer.id }}</span>
+    </div>
+    <div class="field">
+      <span class="label">Name:</span>
+      <span class="value">{{ customer.name }}</span>
+    </div>
+    <div class="field">
+      <span class="label">Company:</span>
+      <span class="value">{{ customer.companyName }}</span>
+    </div>
+    <div class="field">
+      <span class="label">Job Title:</span>
+      <span class="value">{{ customer.jobtitle }}</span>
+    </div>
+    @if (customer.email) {
+      <div class="field">
+        <span class="label">Email:</span>
+        <span class="value">{{ customer.email }}</span>
+      </div>
+    }
+    @if (customer.phoneNumber) {
+      <div class="field">
+        <span class="label">Phone:</span>
+        <span class="value">{{ customer.phoneNumber }}</span>
+      </div>
+    }
+    @if (customer.address) {
+      <div class="field">
+        <span class="label">Address:</span>
+        <span class="value">{{ customer.address }}</span>
+      </div>
+    }
+    @if (customer.notes) {
+      <div class="field">
+        <span class="label">Notes:</span>
+        <span class="value">{{ customer.notes }}</span>
+      </div>
+    }
+    @if (customer.status) {
+      <div class="field">
+        <span class="label">Status:</span>
+        <span class="value">{{ customer.status }}</span>
+      </div>
+    }
+    @if (customer.createdDate) {
+      <div class="field">
+        <span class="label">Created:</span>
+        <span class="value">{{ customer.createdDate }}</span>
+      </div>
+    }
+  </div>
+}
