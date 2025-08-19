@@ -1,0 +1,44 @@
+/* Container around the chart */
+.pie-chart-container {
+  /* width: 300px;              */
+  max-width: 100%;
+  margin: 20px 0 20px 20px;  /* top/right/bottom/left: push to left */
+  padding: 20px;            
+  background-color: #ffffff; 
+  border-radius: 15px;       
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.3);  */
+  text-align: center;        
+  color: #000000;            
+  float: left;               /* make it align left */
+}
+
+
+/* Chart canvas styling */
+.pie-chart-container canvas {
+  display: block;
+  margin: 0 auto;           /* center canvas */
+}
+
+/* Chart legend text */
+.pie-chart-container .chart-legend {
+  color: #000000;           /* legend text color */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Tooltip text (the number that shows when hovering) */
+.chartjs-tooltip {
+  color: #000000 !important;       /* black text */
+  background: #ffffff !important;  /* white background */
+  border: 1px solid #333;          /* optional border */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Optional: make the chart pop on hover */
+.pie-chart-container canvas:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}

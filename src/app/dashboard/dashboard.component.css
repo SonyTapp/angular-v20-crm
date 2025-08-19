@@ -17,24 +17,28 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 200px;
   text-align: center;
-  width: 150px;
+  max-width: 100px;
+  max-height: 100px; 
+  min-width: 100px;
+  min-height: 100px;
   background-color: #f9f9f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #08121c; /* deep slate blue-gray */
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
-  min-height: 150px;
+  box-shadow: 0 5px 8px #000000b3;
   display: flex;          /* use flexbox */
   flex-direction: column; /* stack content vertically */
   justify-content: flex-end; /* move content to bottom */
-  height: 150px; 
-   border: 2px solid #08121c;;
+  
+   border: 2px solid #08121c;
+   padding-top: 10px;
 }
 
 .stat-card p {
   margin: 0.5rem 0;
+  margin-top: -6px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #08121c; /* deep slate blue-gray */
   translate: y(-20px);

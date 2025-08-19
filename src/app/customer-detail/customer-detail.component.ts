@@ -16,7 +16,7 @@ import { MessageService } from '../message.service';
   templateUrl: './customer-detail.component.html',
   styleUrls: [ './customer-detail.component.css' ],
   standalone: true,
-  imports: [FormsModule]
+  imports: [FormsModule,]
 
 })
 export class CustomerDetailComponent implements OnInit {
