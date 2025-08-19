@@ -23,7 +23,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/angular-crm",
+            "outputPath": "dist/angular-v20-crm",
+
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -96,6 +97,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
