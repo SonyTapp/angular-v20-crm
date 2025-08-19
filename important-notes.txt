@@ -25,13 +25,14 @@
 
    ---- Compiles your Angular app for production ----
 
-        ng build --configuration production --base-href /angular-crm/
-
+        ng build --configuration production --base-href /angular-v20-crm/
+        ng build --configuration production --base-href "https://sonytapp.github.io/angular-v20-crm/"
 
 
   ---- Takes the built files and pushes them to the gh-pages branch of your repo. ----
 
-        npx angular-cli-ghpages --dir=dist/angular-crm/browser
+       
+        npx angular-cli-ghpages --dir=dist/angular-v20-crm/browser
 
 
 

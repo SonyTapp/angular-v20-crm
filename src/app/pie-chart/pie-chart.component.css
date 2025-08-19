@@ -4,7 +4,7 @@
   max-width: 100%;
   margin: 20px 0 20px 20px;  /* top/right/bottom/left: push to left */
   padding: 20px;            
-  background-color: #ffffff; 
+  background-color: rgb(209, 217, 226);
   border-radius: 15px;       
   /* box-shadow: 0 4px 15px rgba(0,0,0,0.3);  */
   text-align: center;        
@@ -17,6 +17,7 @@
 .pie-chart-container canvas {
   display: block;
   margin: 0 auto;           /* center canvas */
+  /* background-color: rgb(244, 246, 249); */
 }
 
 /* Chart legend text */
