@@ -36,4 +36,9 @@ export class InteractionService {
   deleteInteraction(id: number): Observable<any> {
     return this.http.delete(`${this.interactionsUrl}/${id}`);
   }
+
+  addInteraction(interaction: Interaction): Observable<Interaction> {
+  return this.http.post<Interaction>(this.interactionsUrl, interaction);
+}
+
 }

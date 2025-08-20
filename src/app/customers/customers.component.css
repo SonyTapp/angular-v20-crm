@@ -126,7 +126,7 @@ button.edit:hover {
 .toggle-add-client {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border-radius: 25%;
   background-color: #3f525c;
   color: white;
   border: none;

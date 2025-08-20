@@ -1,0 +1,14 @@
+<div class="interactions">
+  <label class="interaction-header" for="customer">Client Name: </label>
+  <select class="cust-dropdown" id="customer" #customerSelect>
+    <option value="" disabled selected>Select a Client</option>
+    <option *ngFor="let customer of customers" [value]="customer.id">{{ customer.name }}</option>
+  </select>
+
+  <label class="note-tag" for="note">Note: </label>
+  <input class="interaction-detail" id="note" #noteInput />
+
+  <button type="button" class="add-button" (click)="addInteraction(customerSelect, noteInput)">
+    Add Interaction
+  </button>
+</div>

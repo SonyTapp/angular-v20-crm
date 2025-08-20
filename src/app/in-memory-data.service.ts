@@ -23,15 +23,15 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
 
     const interactions: Interaction[] = [
-      { id: 1, customerId: 1, detail: 'Called about upgrade', date: '2025-08-10' },
-      { id: 2, customerId: 9, detail: 'Sent proposal', date: '2025-08-12' },
-      { id: 3, customerId: 2, detail: 'Followed up on bulk order', date: '2025-08-05' },
-      { id: 4, customerId: 3, detail: 'Demo scheduled', date: '2025-08-15' },
-      { id: 5, customerId: 4, detail: 'Sent contract', date: '2025-07-20' },
-      { id: 6, customerId: 5, detail: 'Requested eco-friendly options', date: '2025-06-05' },
-      { id: 7, customerId: 6, detail: 'Quarterly order confirmed', date: '2025-04-18' },
-      { id: 8, customerId: 7, detail: 'Assisted with campaign tracking', date: '2025-07-30' },
-      { id: 9, customerId: 8, detail: 'Discussed custom manufacturing', date: '2025-06-15' },
+      { id: 1, customerId: 1, detail: 'Called about upgrade', date: '20-08-2025, 17:15:34' },
+      // { id: 2, customerId: 9, detail: 'Sent proposal', date: '2025-08-12' },
+      // { id: 3, customerId: 2, detail: 'Followed up on bulk order', date: '2025-08-05' },
+      // { id: 4, customerId: 3, detail: 'Demo scheduled', date: '2025-08-15' },
+      // { id: 5, customerId: 4, detail: 'Sent contract', date: '2025-07-20' },
+      // { id: 6, customerId: 5, detail: 'Requested eco-friendly options', date: '2025-06-05' },
+      // { id: 7, customerId: 6, detail: 'Quarterly order confirmed', date: '2025-04-18' },
+      // { id: 8, customerId: 7, detail: 'Assisted with campaign tracking', date: '2025-07-30' },
+      // { id: 9, customerId: 8, detail: 'Discussed custom manufacturing', date: '2025-06-15' },
     ];
 
     return { customers, interactions };
